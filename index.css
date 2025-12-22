@@ -2,21 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
- 
-    
-    
+    font-family: sans-serif; 
+}
+
+body{
+    height: 100dvh;
 }
 
 .container{
     display: flex;
     background-color: rgb(214, 215, 215);
     width: 100%;
-}
-.flex-container{
-    width: 100%;
+    height: 100%; 
 }
 
+.flex-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .standard-section{
     display: flex;
@@ -26,9 +32,8 @@
 
 .zero{
     text-align: right;
-    height: 170px;
     font-size: 50px;
-    padding: 50px;
+    padding: 10px;
 }
 
 .M-buttons{
@@ -37,22 +42,23 @@
     padding: 15px;
     margin-bottom: 0;
     
+}
+
+.M:hover{
+    background-color: rgb(155, 154, 154);
    
-    
 }
 .first-section{
    
-    height: 250px;
     
 }
 
 .gridbox{
    
-    
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin-top: 50px;
     gap: 2px;
+    flex-grow: 1;
     
    
 }
@@ -72,7 +78,6 @@
 .right-section{
    
     width: 20%;
-    height: 700px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -158,21 +163,11 @@
 
     .zero{
         font-size: 30px;
-        height: 100px;
     }
 
-    .first-section{
-        height: 190px;
-    }
+  
+    /* .gridbox{height: auto;} */
 
-    .gridbox{height: auto;}
-
-      .gridbox,
-        .right-section,
-        .zero,
-        .first-section{
-    height: auto;
-}
 
 .M-buttons{
     justify-content: space-between;
@@ -183,13 +178,7 @@
 }
 
 @media screen and (max-width:900px){
-    .gridbox,
-    .right-section,
-    .zero,
-    .first-section{
-        width: 100%;
-        height: auto;
-}
+
 
     .M-buttons{
         justify-content: space-between;
@@ -197,6 +186,10 @@
 
 }
     .container{
+        width: 100%;
+    }
+
+    .gridbox{
         width: 100%;
     }
 

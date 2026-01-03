@@ -61,10 +61,132 @@ body {
 
 .gridbox {
   display: grid;
+    grid-template-areas: 
+    "grid-Percentage grid-CE grid-C grid-table grid-Division"
+    "grid-check grid-7 grid-8 grid-9 grid-Multiplication"
+    "grid-superscript grid-4 grid-5 grid-6 grid-minus"
+    "grid-square grid-1 grid-2 grid-3 grid-Plus"
+    "grid-Exit grid-or grid-0 grid-Point grid-Equal"
+    
+    ;
   grid-template-columns: auto auto auto auto auto;
   gap: 2px;
   flex-grow: 1;
 }
+
+
+.grid-Percentage{
+  grid-area: grid-Percentage;
+}
+
+.grid-CE{
+  grid-area: grid-CE;
+}
+
+.grid-C{
+  grid-area: grid-C;
+}
+
+.grid-table{
+  grid-area: grid-table;
+}
+
+.grid-Division{
+  grid-area: grid-Division;
+}
+
+.grid-check{
+  grid-area: grid-check;
+}
+
+.grid-7{
+  grid-area: grid-7;
+}
+
+
+.grid-8{
+  grid-area: grid-8;
+}
+
+.grid-9{
+  grid-area: grid-9;
+}
+
+.grid-Multiplication{
+  grid-area: grid-Multiplication;
+}
+
+
+.grid-superscript{
+  grid-area: grid-superscript;
+}
+
+
+.grid-4{
+  grid-area: grid-4;
+}
+
+
+.grid-5 {
+  grid-area: grid-5 ;
+}
+
+
+.grid-6{
+  grid-area: grid-6;
+}
+
+.grid-minus{
+  grid-area: grid-minus;
+}
+
+
+.grid-square{
+  grid-area: grid-square;
+}
+
+
+.grid-1{
+  grid-area: grid-1;
+}
+
+.grid-2{
+  grid-area: grid-2;
+}
+
+
+.grid-3{
+  grid-area: grid-3;
+}
+
+
+.grid-Plus{
+  grid-area: grid-Plus;
+}
+
+.grid-Exit{
+  grid-area: grid-Exit;
+}
+
+.grid-or{
+  grid-area: grid-or;
+}
+
+.grid-0{
+  grid-area: grid-0;
+}
+
+
+.grid-Point{
+  grid-area: grid-Point;
+}
+
+
+.grid-Equal{
+  grid-area: grid-Equal;
+}
+
+
 .gray-button {
   font-size: 30px;
   padding: 10px;
@@ -166,9 +288,20 @@ body {
     width: 100%;
   }
 
+  .M-buttons {
+    gap: 10px;
+  }
+
   .gridbox{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 
+     "grid-Percentage grid-check grid-superscript grid-Exit"
+     "grid-CE grid-C grid-table grid-Division"
+     "grid-7 grid-8 grid-9 grid-Multiplication "
+     "grid-4 grid-5 grid-6 grid-minus"
+     "grid-1 grid-2 grid-3 grid-Plus"
+     "grid-or grid-0 grid-Point grid-Equal"
+    ;
     gap: 2px;
     flex-grow: 1;
   }
@@ -187,7 +320,7 @@ body {
   }
 
   .M-buttons {
-    gap: 30px;
+    gap: 10px;
   }
 
   .zero {
